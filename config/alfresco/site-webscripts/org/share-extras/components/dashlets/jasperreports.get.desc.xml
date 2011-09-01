@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>Site Jasper Reports Show</shortname>
+   <description>Displays a jasper reports in the dashboard</description>
+   <url>/components/dashlets/jasperreports</url>
+   <family>site-dashlet</family>
+</webscript>

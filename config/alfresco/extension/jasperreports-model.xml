@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="jp:reportmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+	<description>JasperReports Report Model</description>
+
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0"
+			prefix="d" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+		<!-- Import Alfresco Datalist Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/datalist/1.0"
+			prefix="dl" />
+	</imports>
+
+	<!-- Introduction of new namespaces defined by this model -->
+	<namespaces>
+		<namespace uri="http://www.alfresco.org/model/jasperreports/1.0"
+			prefix="jp" />
+	</namespaces>
+
+	<types>
+		<type name="jp:report">
+			<title>Report</title>
+			<parent>dl:dataListItem</parent>
+			<properties>
+				<property name="jp:name">
+					<type>d:text</type>
+				</property>
+				<property name="jp:description">
+					<type>d:text</type>
+				</property>
+				<property name="jp:file">
+					<type>d:text</type>
+				</property>
+				<property name="jp:parameter">
+					<type>d:text</type>
+				</property>
+				<property name="jp:database">
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	</types>
+
+</model>

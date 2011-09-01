@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>Find reports</shortname>
+	<description>Find reports</description>
+	<url>/jasperreports/report-info/{siteId}/{report}</url>
+    <format default="json">argument</format>	
+	<authentication>user</authentication>
+</webscript>

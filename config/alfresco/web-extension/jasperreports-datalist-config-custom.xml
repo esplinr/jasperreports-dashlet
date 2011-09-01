@@ -1,0 +1,68 @@
+<alfresco-config>
+   <!-- jp:report type create form config-->
+   <config evaluator="model-type" condition="jp:report">
+      <forms>
+         <form>
+            <field-visibility>
+               <show id="jp:name" />
+               <show id="jp:description" />
+               <show id="jp:file" />
+               <show id="jp:parameter" />
+               <show id="jp:database" />
+             </field-visibility>
+            <create-form template="/org/alfresco/components/data-lists/forms/dataitem.ftl" />
+            <appearance>
+               <field id="jp:name" mandatory="true" />
+               <field id="jp:description" />
+               <field id="jp:file" mandatory="true" />
+               <field id="jp:parameter" mandatory="true" help-id="jasperreports.parameters.help">
+                  <control template="/org/alfresco/components/form/controls/textarea.ftl" />
+               </field>
+               <field id="jp:database" />
+            </appearance>
+         </form>
+
+         <!-- Data Grid view -->
+         <form id="datagrid">
+            <field-visibility>
+               <show id="jp:name" />
+               <show id="jp:description" />
+               <show id="jp:file" />
+            </field-visibility>
+         </form>
+      </forms>
+   </config>
+
+   <config evaluator="node-type" condition="jp:report">
+      <forms>
+         <form>
+            <field-visibility>
+               <show id="jp:name" />
+               <show id="jp:description" />
+               <show id="jp:file" />
+               <show id="jp:parameter" />
+               <show id="jp:database" />
+             </field-visibility>
+            <create-form template="/org/alfresco/components/data-lists/forms/dataitem.ftl" />
+            <appearance>
+               <field id="jp:name" mandatory="true" />
+               <field id="jp:description" />
+               <field id="jp:file" mandatory="true" />
+               <field id="jp:parameter" mandatory="true" help-id="jasperreports.parameters.help">
+                  <control template="/org/alfresco/components/form/controls/textarea.ftl" />
+               </field>
+               <field id="jp:database" />
+            </appearance>
+         </form>
+
+         <!-- Data Grid view -->
+         <form id="datagrid">
+            <field-visibility>
+               <show id="jp:name" />
+               <show id="jp:description" />
+               <show id="jp:file" />
+            </field-visibility>
+         </form>
+      </forms>
+   </config>
+</alfresco-config>

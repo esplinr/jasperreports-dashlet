@@ -1,0 +1,5 @@
+<webscript>
+   <shortname>Jasper Reports Show</shortname>
+   <description>Print a jasper reports in the dashboard</description>
+   <url>/modules/jasperreports/report-print/{site}/{report}</url>
+</webscript>
