@@ -1,0 +1,1 @@
+Dashlet for Alfresco 3.4.x to configure and run jasper reports from the share interface
